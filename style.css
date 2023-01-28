@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.right {
+  height: 100vh;
+  background-color: #6ECCAF;
+  color: white;
+}
+
+.container {
+  display: flex;
+  color: white;
+  margin-top: 50px;
+}
+.main {
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+  margin-top: 50px;
+}
+
+.left {
+  position: absolute;
+  background-color: beige;
+  width: 280px;
+  height: 90vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.leftgo {
+  transform: translate(-280px);
+  position: absolute;
+}
+
+.nav-item ul {
+  display: block;
+  list-style: none;
+}
+
+.nav-item ul li {
+  padding: 1rem 10px;
+}
+
+.nav-links {
+  margin: 5rem 4rem;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.882);
+}
+
+#ham {
+  position: fixed;
+  top: 0.5rem;
+  width: 23px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#cross {
+  width: 23px;
+  position: absolute;
+  top: 10px;
+  left: 15rem;
+  cursor: pointer;
+}
+
+.intro {
+  margin: 30px 20px;
+  color: white;
+  padding: 50px 10px;
+}
+
+.greet {
+  margin: 10px 35px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 35px;
+}
+.name {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.status {
+  padding: 35px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.intro p {
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  word-spacing: 8px;
+  font-size: 18px;
+}
+
+.profoImg {
+  height: 300px;
+  width: 300px;
+  border-radius: 47%;
+}
+
+.profile {
+  margin: 8rem 3rem;
+}
+
+@media (max-width: 670px) {
+  .container {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .profile {
+    margin: -3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profoImg {
+    height: 300px;
+    width: 280px;
+  }
+
+  .intro {
+    margin: 5px;
+  }
+}
+
+/* project css */
+
+.project {
+  margin: 10px;
+}
+
+.project div {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+}
+
+.project button {
+  cursor: pointer;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  width: 300px;
+  margin: 10px 0;
+  justify-content: center;
+  border-radius: 10px;
+  border: 0;
+}
+
+.project button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.project-item {
+  justify-items: center;
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(171, 229, 243, 0.867);
+}
+
+@media (max-width: 700px) {
+  .project-item {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .left {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .project-item {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1350px) {
+  .project-item {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .left {
+    height: 55vh;
+  }
+}
+
+/* CONTACT CSS */
+.contact-container {
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.detail {
+  margin: 1rem 0;
+}
+.detail p {
+  font-size: 20px;
+  margin: 8.5px 0;
+}
+
+.input {
+  padding: 10px 15px;
+  width: 18rem;
+  border: none;
+  font: italic;
+  border-radius: 10px;
+  outline: black;
+}
+
+.input:hover {
+  border:0;
+}
+@media (max-width: 450px) {
+  .input {
+    width: 12rem;
+  }
+}
+@media (max-width: 648px) {
+  .contact-container{
+    padding-top: 50px;
+  }
+}
+
+.submit button {
+  padding: 10px 22px;
+  font-size: 19px;
+  background-color: #0e1a5b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit button:hover {
+  color: #0e1a5b;
+  background-color: whitesmoke;
+  border: blue 2px solid;
+}
+/* **********  ABOUT CSS********  */
+
+.about-body {
+  background-color: white;
+}
+
+.education {
+  text-align: center;
+  background-color: #faf7f0;
+  padding-top: 20px;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-box {
+  height: 350px;
+  width: 330px;
+  border-radius: 15px;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.879);
+  margin: 50px 35px;
+}
+
+.about-box p {
+  color: white;
+  font-size: 22px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.about-box h1 {
+  margin-top: 20px;
+  font-size: 35px;
+  color: rgba(255, 0, 0, 0.863);
+}
+.about-box button {
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: red;
+  font-size: 16px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.about-box button:hover {
+  background-color: black;
+  color: red;
+  box-shadow: red 1px 2px 2px 2px;
+}
+
+.Skill {
+  color: white;
+  text-align: center;
+  
+  background-color: #faf7f0;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.skill-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.web-development {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  margin: 20px 10px;
+  padding: 20px;
+}
+
+.web-development h1 {
+  color: red;
+  margin: 20px 10px;
+}
+
+.web-development p {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 2px 10px;
+}
+
+@media (max-width: 550px) {
+  .about-box {
+    height: 350px;
+    width: 260px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.879);
+    margin: 50px 35px;
+  }
+}
+
+@media (max-width: 850px) {
+  .education-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .skill-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (min-width: 851px) and (max-width: 1200px) {
+  .education-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .skill-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
